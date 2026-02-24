@@ -1,13 +1,20 @@
 import Link from 'next/link';
 import { MessageCircle } from 'lucide-react';
 import { companyInfo } from '@/lib/data';
+import fs from 'fs';
+import path from 'path';
+
+// Determine which logo file to use at build/server time so we don't pass
+// client-side event handlers (like onError) from a Server Component.
+const _logoPath = path.join(process.cwd(), 'public', 'images', 'logo.png');
+const logoSrc = fs.existsSync(_logoPath) ? '/images/logo.png' : '/images/logo.svg';
 
 export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur-sm">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-2">
-          <div className="h-8 w-8 rounded-lg bg-primary" />
+          <img src={logoSrc} alt={companyInfo.name} className="h-8 w-8 object-contain" />
           <span className="font-bold text-primary">{companyInfo.name}</span>
         </Link>
         

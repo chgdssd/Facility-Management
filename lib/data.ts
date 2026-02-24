@@ -4,10 +4,10 @@ export const companyInfo = {
   description:
     'We provide comprehensive facility management and specialized property services to keep your business environment clean, safe, and productive.',
   address:
-    'Ground Floor, 98, Doddathoguru, Electronic City, Bengaluru, Karnataka 560100',
-  phone: '+91 (080) 1234-5678',
+    'No.23, Site No 98, Neeladri Road, Electronic City, Bangalore - 560100',
+  phone: '+91 9036954451',
   email: 'info@abgroupfmc.com',
-  whatsapp: '+91 9876543210',
+  whatsapp: '+91 9036954451',
   website: 'http://www.abgroupfmc.com',
 };
 
