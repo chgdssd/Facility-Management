@@ -1,13 +1,9 @@
 import Link from 'next/link';
 import { MessageCircle } from 'lucide-react';
 import { companyInfo } from '@/lib/data';
-import fs from 'fs';
-import path from 'path';
 
-// Determine which logo file to use at build/server time so we don't pass
-// client-side event handlers (like onError) from a Server Component.
-const _logoPath = path.join(process.cwd(), 'public', 'images', 'logo.png');
-const logoSrc = fs.existsSync(_logoPath) ? '/images/logo.png' : '/images/logo.svg';
+// Use the logo file present in `public/images`. On this repo it's named `Logo.png`.
+const logoSrc = '/images/Logo.png';
 
 export function Header() {
   return (
