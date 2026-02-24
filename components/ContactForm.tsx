@@ -36,14 +36,14 @@ export function ContactForm() {
           name="firstName"
           placeholder="First Name"
           required
-          className="bg-secondary"
+          className="bg-slate-100 placeholder:text-slate-500"
           disabled={isSubmitting}
         />
         <Input
           name="lastName"
           placeholder="Last Name"
           required
-          className="bg-secondary"
+          className="bg-slate-100 placeholder:text-slate-500"
           disabled={isSubmitting}
         />
       </div>
@@ -52,26 +52,26 @@ export function ContactForm() {
         type="email"
         placeholder="Email Address"
         required
-        className="bg-secondary"
+        className="bg-slate-100 placeholder:text-slate-500"
         disabled={isSubmitting}
       />
       <Input
         name="phone"
         type="tel"
         placeholder="Phone Number"
-        className="bg-secondary"
+        className="bg-slate-100 placeholder:text-slate-500"
         disabled={isSubmitting}
       />
       <Input
         name="company"
         placeholder="Company Name"
-        className="bg-secondary"
+        className="bg-slate-100 placeholder:text-slate-500"
         disabled={isSubmitting}
       />
       <Textarea
         name="message"
         placeholder="Tell us about your facility management needs..."
-        className="min-h-32 bg-secondary"
+        className="min-h-32 bg-slate-100 placeholder:text-slate-500"
         required
         disabled={isSubmitting}
       />
